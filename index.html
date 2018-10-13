@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+   <h2>Gasto Semanal</h2>
+
+   <div class="container">
+     <div class="row contenedor-gasto">
+        <div class="col-md-6">
+          <h3>Añade tus gastos aquí</h3>
+
+          <div id="mensaje">
+
+          </div>
+          <form action="#" id="formulario">
+            <div class="form-group">
+              <label for="">Gasto:</label>
+              <input type="text" id="gasto" class="form-control" placeholder="Nombre Gasto">
+            </div>
+            <div class="form-group">
+              <label for="cantidad">Cantidad:</label>
+              <input type="number" id="cantidad" class="form-control" min="0" placeholder="Cantidad en S/">
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Agregar">
+          </form>
+        </div>
+        <div class="col-md-6">
+
+          <div id="gastos">
+            <ul class="list-group">
+            </ul>
+          </div>
+          
+          <h3>Listado</h3>
+          <div>
+            <div class="presupuesto">Presupuesto S/. <span id="span-presupuesto"></span></div>
+            <div class="cantidad">Cantidad S/. <span id="span-cantidad"></span></div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/gasto-semanal.js"></script>
+  </body>
+</html>
